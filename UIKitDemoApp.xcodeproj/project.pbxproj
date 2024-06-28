@@ -11,6 +11,17 @@
 		636383DA2C2E52C900668C9E /* HitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636383D72C2E52C900668C9E /* HitListViewController.swift */; };
 		636383DF2C2E61B100668C9E /* HitList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 636383DD2C2E61B100668C9E /* HitList.xcdatamodeld */; };
 		636383E12C2E623F00668C9E /* CDHitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636383E02C2E623F00668C9E /* CDHitList.swift */; };
+		637DD2E72C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2E62C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift */; };
+		637DD2E92C2F3C0900A81F83 /* SKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2E82C2F3C0900A81F83 /* SKApp.swift */; };
+		637DD2EB2C2F3C7800A81F83 /* SKComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2EA2C2F3C7800A81F83 /* SKComponent.swift */; };
+		637DD2EE2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2ED2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift */; };
+		637DD2F12C2F40FE00A81F83 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2F02C2F40FE00A81F83 /* UIViewControllerExtension.swift */; };
+		637DD2F42C2F432500A81F83 /* SKOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2F22C2F432500A81F83 /* SKOverlayViewController.swift */; };
+		637DD2F52C2F432500A81F83 /* SKOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637DD2F32C2F432500A81F83 /* SKOverlayViewController.xib */; };
+		63B658FF2C2F2646005FB32B /* SKAppSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B658FD2C2F2646005FB32B /* SKAppSelectionViewController.swift */; };
+		63B659002C2F2646005FB32B /* SKAppSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B658FE2C2F2646005FB32B /* SKAppSelectionViewController.xib */; };
+		63B659052C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B659032C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift */; };
+		63B659062C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B659042C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib */; };
 		B297D9CD2C2E3A6B00862D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */; };
 		B297D9CF2C2E3A6B00862D0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9CE2C2E3A6B00862D0D /* SceneDelegate.swift */; };
 		B297D9D12C2E3A6B00862D0D /* FrameworksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9D02C2E3A6B00862D0D /* FrameworksController.swift */; };
@@ -28,6 +39,17 @@
 		636383D82C2E52C900668C9E /* HitListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitListViewController.xib; sourceTree = "<group>"; };
 		636383DE2C2E61B100668C9E /* HitList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HitList.xcdatamodel; sourceTree = "<group>"; };
 		636383E02C2E623F00668C9E /* CDHitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDHitList.swift; sourceTree = "<group>"; };
+		637DD2E62C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKOverlayDrawableAppProtocol.swift; sourceTree = "<group>"; };
+		637DD2E82C2F3C0900A81F83 /* SKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKApp.swift; sourceTree = "<group>"; };
+		637DD2EA2C2F3C7800A81F83 /* SKComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKComponent.swift; sourceTree = "<group>"; };
+		637DD2ED2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextDataSupportProtocol.swift; sourceTree = "<group>"; };
+		637DD2F02C2F40FE00A81F83 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		637DD2F22C2F432500A81F83 /* SKOverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKOverlayViewController.swift; sourceTree = "<group>"; };
+		637DD2F32C2F432500A81F83 /* SKOverlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKOverlayViewController.xib; sourceTree = "<group>"; };
+		63B658FD2C2F2646005FB32B /* SKAppSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAppSelectionViewController.swift; sourceTree = "<group>"; };
+		63B658FE2C2F2646005FB32B /* SKAppSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKAppSelectionViewController.xib; sourceTree = "<group>"; };
+		63B659032C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAppSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		63B659042C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKAppSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
 		B297D9C92C2E3A6B00862D0D /* UIKitDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B297D9CE2C2E3A6B00862D0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				636383D42C2E528D00668C9E /* Persistance */,
+				63B658FB2C2F242F005FB32B /* StoreKit */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -104,6 +127,71 @@
 			path = HitListDataModel;
 			sourceTree = "<group>";
 		};
+		637DD2EC2C2F3DA000A81F83 /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B297D9E22C2E3BF100862D0D /* ListViewController.swift */,
+				B297D9E32C2E3BF100862D0D /* ListViewController.xib */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		637DD2EF2C2F3F5500A81F83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				637DD2F02C2F40FE00A81F83 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63B658FB2C2F242F005FB32B /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				63B659072C2F37F1005FB32B /* SKAppSelectionController */,
+				63B658FC2C2F2548005FB32B /* SKOverlay */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		63B658FC2C2F2548005FB32B /* SKOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				637DD2F22C2F432500A81F83 /* SKOverlayViewController.swift */,
+				637DD2F32C2F432500A81F83 /* SKOverlayViewController.xib */,
+			);
+			path = SKOverlay;
+			sourceTree = "<group>";
+		};
+		63B659012C2F26E5005FB32B /* SKAppSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63B658FD2C2F2646005FB32B /* SKAppSelectionViewController.swift */,
+				63B658FE2C2F2646005FB32B /* SKAppSelectionViewController.xib */,
+			);
+			path = SKAppSelectionViewController;
+			sourceTree = "<group>";
+		};
+		63B659022C2F271A005FB32B /* SKAppSelectionCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				63B659032C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift */,
+				63B659042C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib */,
+			);
+			path = SKAppSelectionCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		63B659072C2F37F1005FB32B /* SKAppSelectionController */ = {
+			isa = PBXGroup;
+			children = (
+				63B659022C2F271A005FB32B /* SKAppSelectionCollectionViewCell */,
+				63B659012C2F26E5005FB32B /* SKAppSelectionViewController */,
+				637DD2E62C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift */,
+				637DD2E82C2F3C0900A81F83 /* SKApp.swift */,
+				637DD2EA2C2F3C7800A81F83 /* SKComponent.swift */,
+			);
+			path = SKAppSelectionController;
+			sourceTree = "<group>";
+		};
 		B297D9C02C2E3A6B00862D0D = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +211,7 @@
 		B297D9CB2C2E3A6B00862D0D /* UIKitDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				637DD2EF2C2F3F5500A81F83 /* Extensions */,
 				B297D9DA2C2E3A6D00862D0D /* Info.plist */,
 				B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */,
 				B297D9D02C2E3A6B00862D0D /* FrameworksController.swift */,
@@ -147,10 +236,10 @@
 		B297D9E12C2E3BBE00862D0D /* ListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B297D9E22C2E3BF100862D0D /* ListViewController.swift */,
-				B297D9E32C2E3BF100862D0D /* ListViewController.xib */,
+				637DD2EC2C2F3DA000A81F83 /* ListViewController */,
 				B297D9E62C2E428D00862D0D /* ListElement.swift */,
 				B297D9E82C2E462400862D0D /* List.swift */,
+				637DD2ED2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -216,6 +305,9 @@
 				636383D92C2E52C900668C9E /* HitListViewController.xib in Resources */,
 				B297D9D62C2E3A6D00862D0D /* Assets.xcassets in Resources */,
 				B297D9D92C2E3A6D00862D0D /* Base in Resources */,
+				637DD2F52C2F432500A81F83 /* SKOverlayViewController.xib in Resources */,
+				63B659002C2F2646005FB32B /* SKAppSelectionViewController.xib in Resources */,
+				63B659062C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib in Resources */,
 				B297D9E52C2E3BF100862D0D /* ListViewController.xib in Resources */,
 				B297D9D42C2E3A6B00862D0D /* Base in Resources */,
 			);
@@ -232,11 +324,19 @@
 				B297D9CD2C2E3A6B00862D0D /* AppDelegate.swift in Sources */,
 				B297D9E42C2E3BF100862D0D /* ListViewController.swift in Sources */,
 				B297D9CF2C2E3A6B00862D0D /* SceneDelegate.swift in Sources */,
+				637DD2F12C2F40FE00A81F83 /* UIViewControllerExtension.swift in Sources */,
+				63B659052C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift in Sources */,
 				636383DA2C2E52C900668C9E /* HitListViewController.swift in Sources */,
+				637DD2E72C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift in Sources */,
+				63B658FF2C2F2646005FB32B /* SKAppSelectionViewController.swift in Sources */,
+				637DD2EE2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift in Sources */,
 				636383DF2C2E61B100668C9E /* HitList.xcdatamodeld in Sources */,
 				B297D9E72C2E428D00862D0D /* ListElement.swift in Sources */,
 				B297D9E92C2E462400862D0D /* List.swift in Sources */,
+				637DD2EB2C2F3C7800A81F83 /* SKComponent.swift in Sources */,
 				636383E12C2E623F00668C9E /* CDHitList.swift in Sources */,
+				637DD2E92C2F3C0900A81F83 /* SKApp.swift in Sources */,
+				637DD2F42C2F432500A81F83 /* SKOverlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

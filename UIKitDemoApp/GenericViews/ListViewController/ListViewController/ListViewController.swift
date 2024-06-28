@@ -51,6 +51,10 @@ extension ListViewController: UITableViewDelegate {
            let listData = element.nextListData {
             listController.list = listData
         }
+        if let contextDataController = controllerToShow as? ContextDataSupportProtocol,
+           let contextData = element.contextData {
+            contextDataController.setContextData(contextData)
+        }
         show(controllerToShow, sender: nil)
     }
 }

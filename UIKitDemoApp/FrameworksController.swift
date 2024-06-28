@@ -24,6 +24,25 @@ class FrameworksController: UIViewController {
                     )
                 ]
             )
+        ),
+        ListElement(
+            name: "Store Kit",
+            controllerToShow: ListViewController.self,
+            nextListData: List(
+                title: "Store Kit",
+                elements: [
+                    ListElement(
+                        name: SKComponent.SKOverlay.rawValue,
+                        controllerToShow: SKAppSelectionViewController.self,
+                        contextData: SKOverlayViewController.self
+                    ),
+                    ListElement(
+                        name: SKComponent.SKStoreProductViewController.rawValue,
+                        controllerToShow: SKAppSelectionViewController.self,
+                        contextData: UIViewController.self
+                    )
+                ]
+            )
         )
     ]
     
@@ -35,7 +54,7 @@ class FrameworksController: UIViewController {
     
     // MARK: - Configuration Management
     private func initialConfiguration() {
-        title = "UIKit Demo App"
+        title = "Demo App"
         frameworksList.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         frameworksList.dataSource = self
         frameworksList.delegate = self
