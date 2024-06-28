@@ -144,6 +144,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		63A248932C2F7A35001E6652 /* EntryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				B297D9D02C2E3A6B00862D0D /* FrameworksController.swift */,
+				B297D9D72C2E3A6D00862D0D /* LaunchScreen.storyboard */,
+				B297D9D22C2E3A6B00862D0D /* Main.storyboard */,
+			);
+			path = EntryPoint;
+			sourceTree = "<group>";
+		};
 		63B658FB2C2F242F005FB32B /* StoreKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,14 +223,12 @@
 			children = (
 				B297D9DA2C2E3A6D00862D0D /* Info.plist */,
 				B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */,
-				B297D9D02C2E3A6B00862D0D /* FrameworksController.swift */,
 				B297D9CE2C2E3A6B00862D0D /* SceneDelegate.swift */,
 				B297D9D52C2E3A6D00862D0D /* Assets.xcassets */,
+				63A248932C2F7A35001E6652 /* EntryPoint */,
 				637DD2EF2C2F3F5500A81F83 /* Extensions */,
 				636383D32C2E527E00668C9E /* Frameworks */,
 				B297D9E02C2E3BB300862D0D /* GenericViews */,
-				B297D9D72C2E3A6D00862D0D /* LaunchScreen.storyboard */,
-				B297D9D22C2E3A6B00862D0D /* Main.storyboard */,
 			);
 			path = UIKitDemoApp;
 			sourceTree = "<group>";
