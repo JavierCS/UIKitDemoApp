@@ -13,6 +13,7 @@
 		636383E12C2E623F00668C9E /* CDHitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636383E02C2E623F00668C9E /* CDHitList.swift */; };
 		6365A9232C34E080005DC110 /* StoreProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A9212C34E080005DC110 /* StoreProductViewController.swift */; };
 		6365A9242C34E080005DC110 /* StoreProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6365A9222C34E080005DC110 /* StoreProductViewController.xib */; };
+		6365A9272C34ECC1005DC110 /* Videos.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6365A9262C34ECC1005DC110 /* Videos.bundle */; };
 		637DD2E72C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2E62C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift */; };
 		637DD2E92C2F3C0900A81F83 /* SKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2E82C2F3C0900A81F83 /* SKApp.swift */; };
 		637DD2EB2C2F3C7800A81F83 /* SKComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2EA2C2F3C7800A81F83 /* SKComponent.swift */; };
@@ -43,6 +44,7 @@
 		636383E02C2E623F00668C9E /* CDHitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDHitList.swift; sourceTree = "<group>"; };
 		6365A9212C34E080005DC110 /* StoreProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProductViewController.swift; sourceTree = "<group>"; };
 		6365A9222C34E080005DC110 /* StoreProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreProductViewController.xib; sourceTree = "<group>"; };
+		6365A9262C34ECC1005DC110 /* Videos.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Videos.bundle; sourceTree = "<group>"; };
 		637DD2E62C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKOverlayDrawableAppProtocol.swift; sourceTree = "<group>"; };
 		637DD2E82C2F3C0900A81F83 /* SKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKApp.swift; sourceTree = "<group>"; };
 		637DD2EA2C2F3C7800A81F83 /* SKComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKComponent.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		636383D32C2E527E00668C9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6365A9252C34E77F005DC110 /* AVKit */,
 				636383D42C2E528D00668C9E /* Persistance */,
 				63B658FB2C2F242F005FB32B /* StoreKit */,
 			);
@@ -138,6 +141,14 @@
 				6365A9222C34E080005DC110 /* StoreProductViewController.xib */,
 			);
 			path = SKStoreProductViewController;
+			sourceTree = "<group>";
+		};
+		6365A9252C34E77F005DC110 /* AVKit */ = {
+			isa = PBXGroup;
+			children = (
+				6365A9262C34ECC1005DC110 /* Videos.bundle */,
+			);
+			path = AVKit;
 			sourceTree = "<group>";
 		};
 		637DD2EC2C2F3DA000A81F83 /* ListViewController */ = {
@@ -325,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				636383D92C2E52C900668C9E /* HitListViewController.xib in Resources */,
+				6365A9272C34ECC1005DC110 /* Videos.bundle in Resources */,
 				B297D9D62C2E3A6D00862D0D /* Assets.xcassets in Resources */,
 				B297D9D92C2E3A6D00862D0D /* Base in Resources */,
 				637DD2F52C2F432500A81F83 /* SKOverlayViewController.xib in Resources */,
