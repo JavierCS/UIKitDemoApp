@@ -81,8 +81,8 @@ extension SKAppSelectionViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWidth = collectionView.frame.width / 2
-        let itemSize = CGSize(width: itemWidth, height: itemWidth + 80.0)
+        let itemWidth = collectionView.frame.width / 3
+        let itemSize = CGSize(width: itemWidth, height: itemWidth)
         return itemSize
     }
     

@@ -39,7 +39,7 @@ class FrameworksController: UIViewController {
                     ListElement(
                         name: SKComponent.SKStoreProductViewController.rawValue,
                         controllerToShow: SKAppSelectionViewController.self,
-                        contextData: UIViewController.self
+                        contextData: StoreProductViewController.self
                     )
                 ]
             )
