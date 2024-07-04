@@ -17,22 +17,13 @@ class FrameworksController: UIViewController {
             )
         ),
         ListElement(
-            name: "Persistance",
+            name: "Core Data",
             controllerToShow: ListViewController.self,
             nextListData: List(
-                title: "Persistance",
+                title: "Core Data",
                 elements: [
-                    ListElement(
-                        name: "Core Data",
-                        controllerToShow: ListViewController.self,
-                        nextListData: List(
-                            title: "Core Data",
-                            elements: [
-                                ListElement(name: "Hit List", controllerToShow: HitListViewController.self),
-                                ListElement(name: "Bow Ties", controllerToShow: BowTiesListViewController.self)
-                            ]
-                        )
-                    )
+                    ListElement(name: "Hit List", controllerToShow: HitListViewController.self),
+                    ListElement(name: "Bow Ties", controllerToShow: BowTiesListViewController.self)
                 ]
             )
         ),

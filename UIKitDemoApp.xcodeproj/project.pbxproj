@@ -107,18 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				6365A9252C34E77F005DC110 /* AVKit */,
-				636383D42C2E528D00668C9E /* Persistance */,
+				636383D52C2E529600668C9E /* CoreData */,
 				63B658FB2C2F242F005FB32B /* StoreKit */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		636383D42C2E528D00668C9E /* Persistance */ = {
-			isa = PBXGroup;
-			children = (
-				636383D52C2E529600668C9E /* CoreData */,
-			);
-			path = Persistance;
 			sourceTree = "<group>";
 		};
 		636383D52C2E529600668C9E /* CoreData */ = {

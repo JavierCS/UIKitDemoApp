@@ -35,6 +35,7 @@ class BowTiesListViewController: UIViewController {
     
     private func showInitialTableState() {
         let firstIndexPath = IndexPath(row: 0, section: 0)
+        if bowTies.count > 0 { selectedIndexPath = firstIndexPath }
         bowTiesList.selectRow(at: firstIndexPath, animated: true, scrollPosition: .none)
         showBowTieData(for: firstIndexPath)
     }
