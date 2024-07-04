@@ -28,7 +28,8 @@ class FrameworksController: UIViewController {
                         nextListData: List(
                             title: "Core Data",
                             elements: [
-                                ListElement(name: "Hit List", controllerToShow: HitListViewController.self)
+                                ListElement(name: "Hit List", controllerToShow: HitListViewController.self),
+                                ListElement(name: "Bow Ties", controllerToShow: BowTiesListViewController.self)
                             ]
                         )
                     )
