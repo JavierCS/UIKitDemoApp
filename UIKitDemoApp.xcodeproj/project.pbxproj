@@ -118,6 +118,7 @@
 			children = (
 				6365A93B2C35DE77005DC110 /* CoreDataExamples.swift */,
 				6365A9282C35D136005DC110 /* BowTies */,
+				638D6B4F2C41B2C70037C5F6 /* DogWalking */,
 				636383D62C2E529D00668C9E /* HitList */,
 			);
 			path = CoreData;
@@ -215,6 +216,21 @@
 				6365A9412C360CAD005DC110 /* DictionaryExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		638D6B4F2C41B2C70037C5F6 /* DogWalking */ = {
+			isa = PBXGroup;
+			children = (
+				638D6B502C41B3080037C5F6 /* DogWalkingListViewController */,
+			);
+			path = DogWalking;
+			sourceTree = "<group>";
+		};
+		638D6B502C41B3080037C5F6 /* DogWalkingListViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DogWalkingListViewController;
 			sourceTree = "<group>";
 		};
 		63A248932C2F7A35001E6652 /* EntryPoint */ = {

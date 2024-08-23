@@ -32,4 +32,8 @@ extension Dictionary where Key == String, Value == Any {
     func dictionary(for key: String) -> [String: Any]? {
         return self[key] as? [String: Any]
     }
+    
+    func dictionaryArray(for key: String) -> [[String: Any]]? {
+        return self[key] as? [[String: Any]]
+    }
 }
