@@ -10,6 +10,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        Device.shared.startMonitoring(window: window)
+        Device.shared.delegate = DeviceValidations.shared
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -43,3 +46,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+class DeviceValidations: DeviceValidationsDelegate {
+    static let shared: DeviceValidations = .init()
+    
+    func didTakeScreenShot(at: UIViewController?) {
+        print("El usuario tomó un screen shot")
+    }
+    
+    func didChangeScreenRecordingStatus(isCaptured: Bool, at: UIViewController?) {
+        print(isCaptured ? "El usuario está grabando pantalla" : "El usuario dejó de grabar pantalla o no está grabando pantalla")
+    }
+    
+    func didChangeCallStatus(isOnCall: Bool, at: UIViewController?) {
+        print(isOnCall ? "El usuario está en llamada" : "El usuario dejó de estar en llamada o no está en llamada")
+    }
+}
