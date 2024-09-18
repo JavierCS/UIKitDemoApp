@@ -28,6 +28,16 @@ class FrameworksController: UIViewController {
             )
         ),
         ListElement(
+            name: "UIKit",
+            controllerToShow: ListViewController.self,
+            nextListData: List(
+                title: "UIKit",
+                elements: [
+                    ListElement(name: "UITableView", controllerToShow: UITableViewDemoViewController.self)
+                ]
+            )
+        ),
+        ListElement(
             name: "Store Kit",
             controllerToShow: ListViewController.self,
             nextListData: List(

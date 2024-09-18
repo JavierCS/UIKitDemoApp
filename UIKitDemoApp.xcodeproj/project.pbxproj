@@ -41,6 +41,10 @@
 		7F3898CE2C99EC8A00731AD6 /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3898CD2C99EC8A00731AD6 /* UIWindowExtension.swift */; };
 		7F3898D22C9A2D2500731AD6 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3898D12C9A2D2500731AD6 /* NotificationNameExtension.swift */; };
 		7F3898D42C9A380A00731AD6 /* DeviceValidationsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3898D32C9A380A00731AD6 /* DeviceValidationsDelegate.swift */; };
+		7F6B066E2C9B1F11002555B0 /* UITableViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6B066D2C9B1F11002555B0 /* UITableViewDemoViewController.xib */; };
+		7F6B066F2C9B1F11002555B0 /* UITableViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B066C2C9B1F11002555B0 /* UITableViewDemoViewController.swift */; };
+		7F6B06732C9B229C002555B0 /* UITableViewDemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6B06722C9B229C002555B0 /* UITableViewDemoTableViewCell.xib */; };
+		7F6B06742C9B229C002555B0 /* UITableViewDemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B06712C9B229C002555B0 /* UITableViewDemoTableViewCell.swift */; };
 		B297D9CD2C2E3A6B00862D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */; };
 		B297D9CF2C2E3A6B00862D0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9CE2C2E3A6B00862D0D /* SceneDelegate.swift */; };
 		B297D9D12C2E3A6B00862D0D /* FrameworksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9D02C2E3A6B00862D0D /* FrameworksController.swift */; };
@@ -88,6 +92,10 @@
 		7F3898CD2C99EC8A00731AD6 /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		7F3898D12C9A2D2500731AD6 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		7F3898D32C9A380A00731AD6 /* DeviceValidationsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceValidationsDelegate.swift; sourceTree = "<group>"; };
+		7F6B066C2C9B1F11002555B0 /* UITableViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDemoViewController.swift; sourceTree = "<group>"; };
+		7F6B066D2C9B1F11002555B0 /* UITableViewDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITableViewDemoViewController.xib; sourceTree = "<group>"; };
+		7F6B06712C9B229C002555B0 /* UITableViewDemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDemoTableViewCell.swift; sourceTree = "<group>"; };
+		7F6B06722C9B229C002555B0 /* UITableViewDemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITableViewDemoTableViewCell.xib; sourceTree = "<group>"; };
 		B297D9C92C2E3A6B00862D0D /* UIKitDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B297D9CE2C2E3A6B00862D0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 				6365A9252C34E77F005DC110 /* AVKit */,
 				636383D52C2E529600668C9E /* CoreData */,
 				63B658FB2C2F242F005FB32B /* StoreKit */,
+				7F6B066A2C9B1EAE002555B0 /* UIKit */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -314,6 +323,33 @@
 			path = Device;
 			sourceTree = "<group>";
 		};
+		7F6B066A2C9B1EAE002555B0 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7F6B066B2C9B1EDC002555B0 /* UITableViewDemo */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		7F6B066B2C9B1EDC002555B0 /* UITableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7F6B06702C9B2280002555B0 /* Cell */,
+				7F6B066C2C9B1F11002555B0 /* UITableViewDemoViewController.swift */,
+				7F6B066D2C9B1F11002555B0 /* UITableViewDemoViewController.xib */,
+			);
+			path = UITableViewDemo;
+			sourceTree = "<group>";
+		};
+		7F6B06702C9B2280002555B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7F6B06712C9B229C002555B0 /* UITableViewDemoTableViewCell.swift */,
+				7F6B06722C9B229C002555B0 /* UITableViewDemoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B297D9C02C2E3A6B00862D0D = {
 			isa = PBXGroup;
 			children = (
@@ -426,10 +462,12 @@
 				636383D92C2E52C900668C9E /* HitListViewController.xib in Resources */,
 				6365A92C2C35D157005DC110 /* BowTiesListViewController.xib in Resources */,
 				6365A9272C34ECC1005DC110 /* Videos.bundle in Resources */,
+				7F6B066E2C9B1F11002555B0 /* UITableViewDemoViewController.xib in Resources */,
 				B297D9D62C2E3A6D00862D0D /* Assets.xcassets in Resources */,
 				B297D9D92C2E3A6D00862D0D /* Base in Resources */,
 				637DD2F52C2F432500A81F83 /* SKOverlayViewController.xib in Resources */,
 				6365A92F2C35D295005DC110 /* BowTiesSampleData.plist in Resources */,
+				7F6B06732C9B229C002555B0 /* UITableViewDemoTableViewCell.xib in Resources */,
 				63B659002C2F2646005FB32B /* SKAppSelectionViewController.xib in Resources */,
 				6365A9242C34E080005DC110 /* StoreProductViewController.xib in Resources */,
 				63B659062C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib in Resources */,
@@ -448,6 +486,7 @@
 				B297D9D12C2E3A6B00862D0D /* FrameworksController.swift in Sources */,
 				B297D9CD2C2E3A6B00862D0D /* AppDelegate.swift in Sources */,
 				B297D9E42C2E3BF100862D0D /* ListViewController.swift in Sources */,
+				7F6B066F2C9B1F11002555B0 /* UITableViewDemoViewController.swift in Sources */,
 				B297D9CF2C2E3A6B00862D0D /* SceneDelegate.swift in Sources */,
 				637DD2F12C2F40FE00A81F83 /* UIViewControllerExtension.swift in Sources */,
 				6365A93E2C3608C2005DC110 /* BundleExtension.swift in Sources */,
@@ -462,6 +501,7 @@
 				6365A9232C34E080005DC110 /* StoreProductViewController.swift in Sources */,
 				6365A9362C35D79D005DC110 /* BowTie+CoreDataClass.swift in Sources */,
 				6365A9372C35D79D005DC110 /* BowTie+CoreDataProperties.swift in Sources */,
+				7F6B06742C9B229C002555B0 /* UITableViewDemoTableViewCell.swift in Sources */,
 				636383DF2C2E61B100668C9E /* HitList.xcdatamodeld in Sources */,
 				B297D9E72C2E428D00862D0D /* ListElement.swift in Sources */,
 				6365A9422C360CAD005DC110 /* DictionaryExtension.swift in Sources */,
