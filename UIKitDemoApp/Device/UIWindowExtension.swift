@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension UIWindow {
+public extension UIWindow {
     class func getTopViewController() -> UIViewController? {
         guard let keyWindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow }),
               var rootViewController = keyWindow.rootViewController else { return nil }
@@ -14,7 +14,7 @@ extension UIWindow {
     @discardableResult
     func makeSecure() -> UITextField {
         let field = UITextField()
-        field.isSecureTextEntry = !UserDefaults.standard.bool(forKey: DeviceActiveValidationsFlags.isScreenShotLocked.rawValue)
+        field.isSecureTextEntry = true
         addSubview(field)
         layer.superlayer?.addSublayer(field.layer)
         field.layer.sublayers?.last?.addSublayer(self.layer)

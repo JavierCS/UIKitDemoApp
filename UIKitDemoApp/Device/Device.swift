@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import CallKit
 
-public class Device: NSObject {
+public final class Device: NSObject {
     // MARK: - Initialization Code
     public static var shared: Device = .init()
     public weak var delegate: DeviceValidationsDelegate?
@@ -35,9 +35,24 @@ public class Device: NSObject {
     }
     
     /**
-     Esta función inhabilita el monitore de capturas de pantalla, grabación de pantalla y llamadas telefónicas mientras se está utilizando tu aplicación.
+     Esta función reanuda el monitoreo de capturas de pantalla, grabación de pantalla y llamadas telefónicas mientras se está usando tu aplicación.
      
-     Esta función inhabilita el monitoreo de:
+     Una vez que llamaste la función `stopMonitoring()` para inhabilitar/pausar el monitoreo, puedes usar esta función para retomarlo.
+     
+     - Important: A diferencia de `startMonitoring(window: UIWindow?)`, esta función puede ser llamada más de una vez pero sería buena práctica que la llames solo después de haber llamado a la función `stopMonitoring()`.
+     */
+    public func continueMonitoring() {
+        lockScreenShot()
+        addScreenShotNotification()
+        startScreenRecordingMonitoring()
+        startPhoneCallsMonitoring()
+        NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActiveNotification), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    /**
+     Esta función **inhabilita/pausa** el monitore de capturas de pantalla, grabación de pantalla y llamadas telefónicas mientras se está utilizando tu aplicación.
+     
+     Esta función **inhabilita/pausa** el monitoreo de:
      * __Captura de pantalla__
      * __Grabación de Pantalla__
      * __Llamadas telefónicas__
@@ -46,7 +61,7 @@ public class Device: NSObject {
      */
     public func stopMonitoring() {
         stopScreenShotMonitoring()
-        stopScreenShotMonitoring()
+        stopScreenRecordingMonitoring()
         stopPhoneCallsMonitoring()
         NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
     }
@@ -58,7 +73,7 @@ public class Device: NSObject {
     }
     
     // MARK: - ScreenShot Prevention
-    private var secureField: UITextField?
+    public var secureField: UITextField?
     
     private func startScreenShotMonitoring(for window: UIWindow?) {
         makeWindowSecureForScreenShots(window)
@@ -157,7 +172,7 @@ public class Device: NSObject {
     
     private func checkCurrentCalls() {
         let calls = callObserver.calls
-        isOnCall = !calls.isEmpty && calls.contains(where: { $0.hasConnected && !$0.hasEnded })
+        isOnCall = !calls.isEmpty && calls.contains(where: { ($0.hasConnected && !$0.hasEnded) || $0.isOutgoing || $0.isOnHold })
     }
     
     // MARK: Phone Calls Notification
