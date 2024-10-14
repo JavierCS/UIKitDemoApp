@@ -7,6 +7,10 @@ class FrameworksController: UIViewController {
     // MARK: - Logic Vars
     private var frameworks: [ListElement] = [
         ListElement(
+            name: "Test Controller",
+            controllerToShow: TestViewController.self
+        ),
+        ListElement(
             name: "AV Kit",
             controllerToShow: ListViewController.self,
             nextListData: List(
@@ -33,6 +37,16 @@ class FrameworksController: UIViewController {
             nextListData: List(
                 title: "UIKit",
                 elements: [
+                    ListElement(
+                        name: "UICollectionView",
+                        controllerToShow: ListViewController.self,
+                        nextListData: List(
+                            title: "UICollectionView",
+                            elements: [
+                                ListElement(name: "Compositional Layout", controllerToShow: UICollectionViewCompositionalLayoutDemoViewController.self)
+                            ]
+                        )
+                    ),
                     ListElement(name: "UITableView", controllerToShow: UITableViewDemoViewController.self)
                 ]
             )
