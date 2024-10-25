@@ -99,6 +99,16 @@ class TestViewController: UIViewController {
         initialConfiguration()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Device.shared.unlockScreenShot()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        Device.shared.lockScreenShot()
+    }
+    
     // MARK: - Configuration Management
     private func initialConfiguration() {
         title = "Test Controller"

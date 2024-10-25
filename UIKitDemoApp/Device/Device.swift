@@ -2,9 +2,29 @@ import Foundation
 import UIKit
 import CallKit
 
+public enum DeviceCallStatus {
+    case unowned
+    case none
+    case ringing
+    case onCall
+}
+
 public final class Device: NSObject {
     // MARK: - Initialization Code
+    
+    /**
+     Singletón de tipo `Device` que se utiliza para monitorear y gestionar acciones dentro de la aplicación.
+     
+     Singleton para:
+     * Monitoreo y Bloquedo de capturas de pantalla dentro de la aplicación.
+     * Monitoreo y Bloqueo de grabación de pantalla dentro de la aplicación.
+     * Monitoreo de llamadas mientras se usa la aplicación.
+     */
     public static var shared: Device = .init()
+    
+    /**
+     Delegado en el cual se notifica la actividad del usuario dentro de la aplicación.
+     */
     public weak var delegate: DeviceValidationsDelegate?
     
     override init() {
@@ -25,12 +45,13 @@ public final class Device: NSObject {
      - Parameters:
         - window: `UIWindow` que será monitoreada para bloquear los screen shots.
      
-     - Warning: Esta función debe ser llamada solo una vez dentro del ciclo de vida de tu aplicación para evitar duplicidad en los observers que se utilizan dentro de la clase.
+     - Warning: Esta función debe ser llamada solo una vez dentro del ciclo de vida de tu aplicación.
      */
     public func startMonitoring(window: UIWindow?) {
         startScreenShotMonitoring(for: window)
         startScreenRecordingMonitoring()
         startPhoneCallsMonitoring()
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActiveNotification), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
@@ -46,6 +67,7 @@ public final class Device: NSObject {
         addScreenShotNotification()
         startScreenRecordingMonitoring()
         startPhoneCallsMonitoring()
+        NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didBecomeActiveNotification), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
@@ -73,11 +95,16 @@ public final class Device: NSObject {
     }
     
     // MARK: - ScreenShot Prevention
-    public var secureField: UITextField?
+    private var secureField: UITextField?
     
     private func startScreenShotMonitoring(for window: UIWindow?) {
         makeWindowSecureForScreenShots(window)
         addScreenShotNotification()
+    }
+    
+    private func makeWindowSecureForScreenShots(_ window: UIWindow?) {
+        guard let window = window, secureField == nil else { return }
+        secureField = window.makeSecure()
     }
     
     private func stopScreenShotMonitoring() {
@@ -86,19 +113,31 @@ public final class Device: NSObject {
     }
     
     // MARK: Dark Screen Shot Feature
-    private func makeWindowSecureForScreenShots(_ window: UIWindow?) {
-        guard let window = window, secureField == nil else { return }
-        secureField = window.makeSecure()
-    }
     
-    /// Esta función bloquea las capturas de pantalla.
+    /**
+     Esta función bloquea las capturas de pantalla.
+     
+     Esta función bloquea las capturas de pantalla, en caso de que ya esten bloqueadas no tendrá ningún efecto adicional.
+     
+     - Important: Puedes volver a **habilitar** las capturas de pantalla llamando a la función `unlockScreenShot()`.
+     */
     public func lockScreenShot() {
         secureField?.isSecureTextEntry = true
     }
     
-    /// Esta función habilita las capturas de pantalla.
+    /**
+     Esta función habilita las capturas de pantalla.
+     
+     Esta función habilita las capturas de pantalla, en caso de que ya estén habilitadas no tendrá ningún efecto adicional.
+     
+     - Important: Puedes volver a **bloquear** las capturas de pantalla llamand a la función `lockScreenShot()`
+     */
     public func unlockScreenShot() {
         secureField?.isSecureTextEntry = false
+    }
+    
+    public func isActiveScreenShotLock() -> Bool? {
+        return secureField?.isSecureTextEntry
     }
     
     // MARK: Notification After Screen Shot
@@ -106,9 +145,12 @@ public final class Device: NSObject {
     /**
      Agrega la notificación `UIApplication.userDidTakeScreenshotNotification` a la instancia de `Device`.
      
-     Esta función habilita al `delegate` de la instancia de `Device` para ser notificado de que el usuario ha tomado un screen shot dentro de la aplicación.
+     Esta función habilita al `delegate` de la instancia de `Device` para ser notificado de que el usuario ha tomado un screen shot dentro de la aplicación mediante la función `didTakeScreenShot(at controller: UIViewController?)` del  protocolo `DeviceValidationsDelegate`.
+     
+     - Important: Esta notificación cae justo después de que el usuario ha tomado el screen shot y está pensada para que hagas algo una vez que el usuario ha tomado una captura de pantalla, si lo que necesitas es impedir que el usuario tome capturas de pantalla lo que debes hacer es llamar la función `lockScreenShot()`.
      */
     public func addScreenShotNotification() {
+        NotificationCenter.default.removeObserver(self, name: UIApplication.userDidTakeScreenshotNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didTakeScreenshot), name: UIApplication.userDidTakeScreenshotNotification, object: nil)
     }
     
@@ -117,14 +159,14 @@ public final class Device: NSObject {
      
      Esta función inhabilita al `delegate` de la instancia de `Device` para ser notificado de que el usuario ha tomado un screen shot dentro de la aplicación.
      
-     - Warning: Si ejecutas esta función dejarás de recibir en el `delegate` de la instancia de `Device` el llamado a la función `didTakeScreenShot`
+     - Warning: Si ejecutas esta función dejarás de recibir en el `delegate` de la instancia de `Device` el llamado a la función `didTakeScreenShot(at controller: UIViewController?)`
      */
     public func removeScreenShotNotification() {
         NotificationCenter.default.removeObserver(self, name: UIApplication.userDidTakeScreenshotNotification, object: nil)
     }
     
     @objc private func didTakeScreenshot() {
-        delegate?.didTakeScreenShot(at: UIWindow.getTopViewController())
+        delegate?.didTakeScreenShot(at: UIWindow.getTopViewController(), canUserTakeScreenShots: !(isActiveScreenShotLock() ?? false))
     }
     
     // MARK: - Screen Recording Prevention
@@ -143,6 +185,7 @@ public final class Device: NSObject {
     
     // MARK: Screen Recording Notification
     public func addScreenRecordingNotification() {
+        NotificationCenter.default.removeObserver(self, name: UIScreen.capturedDidChangeNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(didScreenRecording), name: UIScreen.capturedDidChangeNotification, object: nil)
     }
     
@@ -156,11 +199,7 @@ public final class Device: NSObject {
     
     // MARK: - Phone Calls Prevention
     private var callObserver: CXCallObserver
-    private var isOnCall: Bool = false {
-        didSet {
-            NotificationCenter.default.post(name: .callStateChanged, object: nil, userInfo: ["isOnCall": isOnCall])
-        }
-    }
+    private var callStatus: DeviceCallStatus = .unowned
     
     private func startPhoneCallsMonitoring() {
         addPhoneCallsNotification()
@@ -172,12 +211,19 @@ public final class Device: NSObject {
     
     private func checkCurrentCalls() {
         let calls = callObserver.calls
-        isOnCall = !calls.isEmpty && calls.contains(where: { ($0.hasConnected && !$0.hasEnded) || $0.isOutgoing || $0.isOnHold })
+        callStatus = .unowned
+        if calls.count == 0 {
+            callStatus = .none
+        } else if calls.first(where: { $0.hasConnected &&  !$0.hasEnded }) != nil {
+            callStatus = .onCall
+        } else if calls.first(where: { !$0.hasConnected || $0.isOutgoing }) != nil {
+            callStatus = .ringing
+        }
+        callStateChanged(callStatus)
     }
     
     // MARK: Phone Calls Notification
     public func addPhoneCallsNotification() {
-        NotificationCenter.default.addObserver(self, selector: #selector(callStateChanged(_:)), name: .callStateChanged, object: nil)
         checkCurrentCalls()
     }
     
@@ -185,10 +231,17 @@ public final class Device: NSObject {
         NotificationCenter.default.removeObserver(self, name: .callStateChanged, object: nil)
     }
     
-    @objc private func callStateChanged(_ notification: Notification) {
-        guard let userInfo = notification.userInfo as? [String: Any],
-              let isOnCall = userInfo["isOnCall"] as? Bool else { return }
-        delegate?.didChangeCallStatus(isOnCall: isOnCall, at: UIWindow.getTopViewController())
+    private func callStateChanged(_ callStatus: DeviceCallStatus) {
+        let topController = UIWindow.getTopViewController()
+        delegate?.didChangeCallStatus(callStatus: callStatus, at: topController)
+        switch callStatus {
+        case .unowned, .none:
+            return
+        case .ringing:
+            delegate?.didReceiveACall(at: topController)
+        case .onCall:
+            delegate?.didAnswerACall(at: topController)
+        }
     }
 }
 

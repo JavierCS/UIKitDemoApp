@@ -4,7 +4,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -49,15 +48,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 class DeviceValidations: DeviceValidationsDelegate {
     static let shared: DeviceValidations = .init()
     
-    func didTakeScreenShot(at: UIViewController?) {
-        print("El usuario tomó un screen shot")
+    func didTakeScreenShot(at controller: UIViewController?, canUserTakeScreenShots: Bool) {
+        print("El usuario tomó captura de pantalla en el controller \(String(describing: controller.self)) y \(canUserTakeScreenShots ? "si" : "no") puede hacerlo ahí.")
     }
     
-    func didChangeScreenRecordingStatus(isCaptured: Bool, at: UIViewController?) {
-        print(isCaptured ? "El usuario está grabando pantalla" : "El usuario dejó de grabar pantalla o no está grabando pantalla")
+    func didChangeScreenRecordingStatus(isCaptured: Bool, at controller: UIViewController?) {
+        print("El usuario \(isCaptured ? "comenzó a grabar pantalla" : "dejó de grabar pantalla o no está grabando pantalla") en el controller \(String(describing: controller)).")
     }
     
-    func didChangeCallStatus(isOnCall: Bool, at: UIViewController?) {
-        print(isOnCall ? "El usuario está en llamada" : "El usuario dejó de estar en llamada o no está en llamada")
+    func didChangeCallStatus(callStatus: DeviceCallStatus, at: UIViewController?) {
+        print("Ha cambiado el status de las llamadas a: \(callStatus)")
+    }
+    
+    func didReceiveACall(at controller: UIViewController?) {
+        print("El usuario está recibiendo una llamada")
+    }
+    
+    func didAnswerACall(at controller: UIViewController?) {
+        print("El usuario ha contestado la llamada")
+    }
+    
+    func didFinishACall(at controller: UIViewController?) {
+        print("El usuario finalizó la llamada")
     }
 }
