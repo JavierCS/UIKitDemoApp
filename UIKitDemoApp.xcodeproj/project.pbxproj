@@ -3,120 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 76;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		636383D92C2E52C900668C9E /* HitListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636383D82C2E52C900668C9E /* HitListViewController.xib */; };
-		636383DA2C2E52C900668C9E /* HitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636383D72C2E52C900668C9E /* HitListViewController.swift */; };
-		636383DF2C2E61B100668C9E /* HitList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 636383DD2C2E61B100668C9E /* HitList.xcdatamodeld */; };
-		636383E12C2E623F00668C9E /* CDHitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636383E02C2E623F00668C9E /* CDHitList.swift */; };
-		6365A9232C34E080005DC110 /* StoreProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A9212C34E080005DC110 /* StoreProductViewController.swift */; };
-		6365A9242C34E080005DC110 /* StoreProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6365A9222C34E080005DC110 /* StoreProductViewController.xib */; };
-		6365A9272C34ECC1005DC110 /* Videos.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6365A9262C34ECC1005DC110 /* Videos.bundle */; };
-		6365A92B2C35D157005DC110 /* BowTiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A9292C35D157005DC110 /* BowTiesListViewController.swift */; };
-		6365A92C2C35D157005DC110 /* BowTiesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6365A92A2C35D157005DC110 /* BowTiesListViewController.xib */; };
-		6365A92F2C35D295005DC110 /* BowTiesSampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6365A92E2C35D295005DC110 /* BowTiesSampleData.plist */; };
-		6365A9322C35D3BB005DC110 /* BowTies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6365A9302C35D3BB005DC110 /* BowTies.xcdatamodeld */; };
-		6365A9362C35D79D005DC110 /* BowTie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A9342C35D79D005DC110 /* BowTie+CoreDataClass.swift */; };
-		6365A9372C35D79D005DC110 /* BowTie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A9352C35D79D005DC110 /* BowTie+CoreDataProperties.swift */; };
-		6365A93A2C35DACA005DC110 /* CDBowTies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A9392C35DACA005DC110 /* CDBowTies.swift */; };
-		6365A93C2C35DE78005DC110 /* CoreDataExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A93B2C35DE77005DC110 /* CoreDataExamples.swift */; };
-		6365A93E2C3608C2005DC110 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A93D2C3608C2005DC110 /* BundleExtension.swift */; };
-		6365A9402C360B64005DC110 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A93F2C360B64005DC110 /* UIColorExtension.swift */; };
-		6365A9422C360CAD005DC110 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365A9412C360CAD005DC110 /* DictionaryExtension.swift */; };
-		637DD2E72C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2E62C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift */; };
-		637DD2E92C2F3C0900A81F83 /* SKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2E82C2F3C0900A81F83 /* SKApp.swift */; };
-		637DD2EB2C2F3C7800A81F83 /* SKComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2EA2C2F3C7800A81F83 /* SKComponent.swift */; };
-		637DD2EE2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2ED2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift */; };
-		637DD2F12C2F40FE00A81F83 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2F02C2F40FE00A81F83 /* UIViewControllerExtension.swift */; };
-		637DD2F42C2F432500A81F83 /* SKOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637DD2F22C2F432500A81F83 /* SKOverlayViewController.swift */; };
-		637DD2F52C2F432500A81F83 /* SKOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637DD2F32C2F432500A81F83 /* SKOverlayViewController.xib */; };
-		63B658FF2C2F2646005FB32B /* SKAppSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B658FD2C2F2646005FB32B /* SKAppSelectionViewController.swift */; };
-		63B659002C2F2646005FB32B /* SKAppSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B658FE2C2F2646005FB32B /* SKAppSelectionViewController.xib */; };
-		63B659052C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B659032C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift */; };
-		63B659062C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B659042C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib */; };
-		7F39479B2CCBEFC600B2765F /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3947962CCBEFC500B2765F /* UIWindowExtension.swift */; };
-		7F39479C2CCBEFC600B2765F /* DeviceValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3947972CCBEFC500B2765F /* DeviceValidation.swift */; };
-		7F39479D2CCBEFC600B2765F /* DeviceValidationsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3947982CCBEFC500B2765F /* DeviceValidationsDelegate.swift */; };
-		7F39479E2CCBEFC600B2765F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3947992CCBEFC500B2765F /* Device.swift */; };
-		7F39479F2CCBEFC600B2765F /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39479A2CCBEFC600B2765F /* NotificationNameExtension.swift */; };
-		7F4BFFFD2CBD999500C38C62 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4BFFFB2CBD999500C38C62 /* TestViewController.swift */; };
-		7F4BFFFE2CBD999500C38C62 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4BFFFC2CBD999500C38C62 /* TestViewController.xib */; };
-		7F5E40EB2CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5E40EA2CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.xib */; };
-		7F5E40EC2CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5E40E92CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.swift */; };
-		7F6B066E2C9B1F11002555B0 /* UITableViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6B066D2C9B1F11002555B0 /* UITableViewDemoViewController.xib */; };
-		7F6B066F2C9B1F11002555B0 /* UITableViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B066C2C9B1F11002555B0 /* UITableViewDemoViewController.swift */; };
-		7F6B06732C9B229C002555B0 /* UITableViewDemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6B06722C9B229C002555B0 /* UITableViewDemoTableViewCell.xib */; };
-		7F6B06742C9B229C002555B0 /* UITableViewDemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B06712C9B229C002555B0 /* UITableViewDemoTableViewCell.swift */; };
-		B297D9CD2C2E3A6B00862D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */; };
-		B297D9CF2C2E3A6B00862D0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9CE2C2E3A6B00862D0D /* SceneDelegate.swift */; };
-		B297D9D12C2E3A6B00862D0D /* FrameworksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9D02C2E3A6B00862D0D /* FrameworksController.swift */; };
-		B297D9D42C2E3A6B00862D0D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B297D9D32C2E3A6B00862D0D /* Base */; };
-		B297D9D62C2E3A6D00862D0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B297D9D52C2E3A6D00862D0D /* Assets.xcassets */; };
-		B297D9D92C2E3A6D00862D0D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B297D9D82C2E3A6D00862D0D /* Base */; };
-		B297D9E42C2E3BF100862D0D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9E22C2E3BF100862D0D /* ListViewController.swift */; };
-		B297D9E52C2E3BF100862D0D /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B297D9E32C2E3BF100862D0D /* ListViewController.xib */; };
-		B297D9E72C2E428D00862D0D /* ListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9E62C2E428D00862D0D /* ListElement.swift */; };
-		B297D9E92C2E462400862D0D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = B297D9E82C2E462400862D0D /* List.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		636383D72C2E52C900668C9E /* HitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitListViewController.swift; sourceTree = "<group>"; };
-		636383D82C2E52C900668C9E /* HitListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HitListViewController.xib; sourceTree = "<group>"; };
-		636383DE2C2E61B100668C9E /* HitList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HitList.xcdatamodel; sourceTree = "<group>"; };
-		636383E02C2E623F00668C9E /* CDHitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDHitList.swift; sourceTree = "<group>"; };
-		6365A9212C34E080005DC110 /* StoreProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProductViewController.swift; sourceTree = "<group>"; };
-		6365A9222C34E080005DC110 /* StoreProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreProductViewController.xib; sourceTree = "<group>"; };
-		6365A9262C34ECC1005DC110 /* Videos.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Videos.bundle; sourceTree = "<group>"; };
-		6365A9292C35D157005DC110 /* BowTiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowTiesListViewController.swift; sourceTree = "<group>"; };
-		6365A92A2C35D157005DC110 /* BowTiesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BowTiesListViewController.xib; sourceTree = "<group>"; };
-		6365A92E2C35D295005DC110 /* BowTiesSampleData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BowTiesSampleData.plist; sourceTree = "<group>"; };
-		6365A9312C35D3BB005DC110 /* BowTies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BowTies.xcdatamodel; sourceTree = "<group>"; };
-		6365A9342C35D79D005DC110 /* BowTie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BowTie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6365A9352C35D79D005DC110 /* BowTie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BowTie+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6365A9392C35DACA005DC110 /* CDBowTies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDBowTies.swift; sourceTree = "<group>"; };
-		6365A93B2C35DE77005DC110 /* CoreDataExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataExamples.swift; sourceTree = "<group>"; };
-		6365A93D2C3608C2005DC110 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
-		6365A93F2C360B64005DC110 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		6365A9412C360CAD005DC110 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
-		637DD2E62C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKOverlayDrawableAppProtocol.swift; sourceTree = "<group>"; };
-		637DD2E82C2F3C0900A81F83 /* SKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKApp.swift; sourceTree = "<group>"; };
-		637DD2EA2C2F3C7800A81F83 /* SKComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKComponent.swift; sourceTree = "<group>"; };
-		637DD2ED2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextDataSupportProtocol.swift; sourceTree = "<group>"; };
-		637DD2F02C2F40FE00A81F83 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		637DD2F22C2F432500A81F83 /* SKOverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKOverlayViewController.swift; sourceTree = "<group>"; };
-		637DD2F32C2F432500A81F83 /* SKOverlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKOverlayViewController.xib; sourceTree = "<group>"; };
-		63B658FD2C2F2646005FB32B /* SKAppSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAppSelectionViewController.swift; sourceTree = "<group>"; };
-		63B658FE2C2F2646005FB32B /* SKAppSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKAppSelectionViewController.xib; sourceTree = "<group>"; };
-		63B659032C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKAppSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
-		63B659042C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SKAppSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
-		7F3947962CCBEFC500B2765F /* UIWindowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
-		7F3947972CCBEFC500B2765F /* DeviceValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceValidation.swift; sourceTree = "<group>"; };
-		7F3947982CCBEFC500B2765F /* DeviceValidationsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceValidationsDelegate.swift; sourceTree = "<group>"; };
-		7F3947992CCBEFC500B2765F /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		7F39479A2CCBEFC600B2765F /* NotificationNameExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
-		7F4BFFFB2CBD999500C38C62 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		7F4BFFFC2CBD999500C38C62 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		7F5E40E92CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCompositionalLayoutDemoViewController.swift; sourceTree = "<group>"; };
-		7F5E40EA2CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICollectionViewCompositionalLayoutDemoViewController.xib; sourceTree = "<group>"; };
-		7F6B066C2C9B1F11002555B0 /* UITableViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDemoViewController.swift; sourceTree = "<group>"; };
-		7F6B066D2C9B1F11002555B0 /* UITableViewDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITableViewDemoViewController.xib; sourceTree = "<group>"; };
-		7F6B06712C9B229C002555B0 /* UITableViewDemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDemoTableViewCell.swift; sourceTree = "<group>"; };
-		7F6B06722C9B229C002555B0 /* UITableViewDemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UITableViewDemoTableViewCell.xib; sourceTree = "<group>"; };
 		B297D9C92C2E3A6B00862D0D /* UIKitDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B297D9CE2C2E3A6B00862D0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B297D9D02C2E3A6B00862D0D /* FrameworksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksController.swift; sourceTree = "<group>"; };
-		B297D9D32C2E3A6B00862D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B297D9D52C2E3A6D00862D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B297D9D82C2E3A6D00862D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B297D9DA2C2E3A6D00862D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B297D9E22C2E3BF100862D0D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		B297D9E32C2E3BF100862D0D /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
-		B297D9E62C2E428D00862D0D /* ListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElement.swift; sourceTree = "<group>"; };
-		B297D9E82C2E462400862D0D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7F5087A02DD6AD8A00E2CA4D /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				/Localized/EntryPoint/LaunchScreen.storyboard,
+				/Localized/EntryPoint/Main.storyboard,
+				Info.plist,
+			);
+			target = B297D9C82C2E3A6B00862D0D /* UIKitDemoApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		7F5087A12DD6AD8A00E2CA4D /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = B297D9C72C2E3A6B00862D0D /* Resources */;
+			membershipExceptions = (
+				EntryPoint/Base.lproj/LaunchScreen.storyboard,
+				EntryPoint/Base.lproj/Main.storyboard,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7F5087662DD6AD8A00E2CA4D /* UIKitDemoApp */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7F5087A02DD6AD8A00E2CA4D /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 7F5087A12DD6AD8A00E2CA4D /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = UIKitDemoApp; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B297D9C62C2E3A6B00862D0D /* Frameworks */ = {
@@ -129,267 +48,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		636383D32C2E527E00668C9E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6365A9252C34E77F005DC110 /* AVKit */,
-				636383D52C2E529600668C9E /* CoreData */,
-				63B658FB2C2F242F005FB32B /* StoreKit */,
-				7F6B066A2C9B1EAE002555B0 /* UIKit */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		636383D52C2E529600668C9E /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				6365A93B2C35DE77005DC110 /* CoreDataExamples.swift */,
-				6365A9282C35D136005DC110 /* BowTies */,
-				638D6B4F2C41B2C70037C5F6 /* DogWalking */,
-				636383D62C2E529D00668C9E /* HitList */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		636383D62C2E529D00668C9E /* HitList */ = {
-			isa = PBXGroup;
-			children = (
-				636383DC2C2E619400668C9E /* HitListDataModel */,
-				636383DB2C2E617E00668C9E /* HitListViewController */,
-			);
-			path = HitList;
-			sourceTree = "<group>";
-		};
-		636383DB2C2E617E00668C9E /* HitListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				636383D72C2E52C900668C9E /* HitListViewController.swift */,
-				636383D82C2E52C900668C9E /* HitListViewController.xib */,
-			);
-			path = HitListViewController;
-			sourceTree = "<group>";
-		};
-		636383DC2C2E619400668C9E /* HitListDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				636383DD2C2E61B100668C9E /* HitList.xcdatamodeld */,
-				636383E02C2E623F00668C9E /* CDHitList.swift */,
-			);
-			path = HitListDataModel;
-			sourceTree = "<group>";
-		};
-		6365A9202C34E044005DC110 /* SKStoreProductViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6365A9212C34E080005DC110 /* StoreProductViewController.swift */,
-				6365A9222C34E080005DC110 /* StoreProductViewController.xib */,
-			);
-			path = SKStoreProductViewController;
-			sourceTree = "<group>";
-		};
-		6365A9252C34E77F005DC110 /* AVKit */ = {
-			isa = PBXGroup;
-			children = (
-				6365A9262C34ECC1005DC110 /* Videos.bundle */,
-			);
-			path = AVKit;
-			sourceTree = "<group>";
-		};
-		6365A9282C35D136005DC110 /* BowTies */ = {
-			isa = PBXGroup;
-			children = (
-				6365A92E2C35D295005DC110 /* BowTiesSampleData.plist */,
-				6365A9332C35D77C005DC110 /* BowTiesDataModel */,
-				6365A92D2C35D287005DC110 /* BowTiesListViewController */,
-			);
-			path = BowTies;
-			sourceTree = "<group>";
-		};
-		6365A92D2C35D287005DC110 /* BowTiesListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6365A9292C35D157005DC110 /* BowTiesListViewController.swift */,
-				6365A92A2C35D157005DC110 /* BowTiesListViewController.xib */,
-			);
-			path = BowTiesListViewController;
-			sourceTree = "<group>";
-		};
-		6365A9332C35D77C005DC110 /* BowTiesDataModel */ = {
-			isa = PBXGroup;
-			children = (
-				6365A9342C35D79D005DC110 /* BowTie+CoreDataClass.swift */,
-				6365A9352C35D79D005DC110 /* BowTie+CoreDataProperties.swift */,
-				6365A9392C35DACA005DC110 /* CDBowTies.swift */,
-				6365A9302C35D3BB005DC110 /* BowTies.xcdatamodeld */,
-			);
-			path = BowTiesDataModel;
-			sourceTree = "<group>";
-		};
-		637DD2EC2C2F3DA000A81F83 /* ListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B297D9E22C2E3BF100862D0D /* ListViewController.swift */,
-				B297D9E32C2E3BF100862D0D /* ListViewController.xib */,
-			);
-			path = ListViewController;
-			sourceTree = "<group>";
-		};
-		637DD2EF2C2F3F5500A81F83 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				6365A93D2C3608C2005DC110 /* BundleExtension.swift */,
-				637DD2F02C2F40FE00A81F83 /* UIViewControllerExtension.swift */,
-				6365A93F2C360B64005DC110 /* UIColorExtension.swift */,
-				6365A9412C360CAD005DC110 /* DictionaryExtension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		638D6B4F2C41B2C70037C5F6 /* DogWalking */ = {
-			isa = PBXGroup;
-			children = (
-				638D6B502C41B3080037C5F6 /* DogWalkingListViewController */,
-			);
-			path = DogWalking;
-			sourceTree = "<group>";
-		};
-		638D6B502C41B3080037C5F6 /* DogWalkingListViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DogWalkingListViewController;
-			sourceTree = "<group>";
-		};
-		63A248932C2F7A35001E6652 /* EntryPoint */ = {
-			isa = PBXGroup;
-			children = (
-				7F4BFFFA2CBD996F00C38C62 /* TestController */,
-				B297D9D02C2E3A6B00862D0D /* FrameworksController.swift */,
-				B297D9D72C2E3A6D00862D0D /* LaunchScreen.storyboard */,
-				B297D9D22C2E3A6B00862D0D /* Main.storyboard */,
-			);
-			path = EntryPoint;
-			sourceTree = "<group>";
-		};
-		63B658FB2C2F242F005FB32B /* StoreKit */ = {
-			isa = PBXGroup;
-			children = (
-				63B659072C2F37F1005FB32B /* SKAppSelectionController */,
-				63B658FC2C2F2548005FB32B /* SKOverlay */,
-				6365A9202C34E044005DC110 /* SKStoreProductViewController */,
-			);
-			path = StoreKit;
-			sourceTree = "<group>";
-		};
-		63B658FC2C2F2548005FB32B /* SKOverlay */ = {
-			isa = PBXGroup;
-			children = (
-				637DD2F22C2F432500A81F83 /* SKOverlayViewController.swift */,
-				637DD2F32C2F432500A81F83 /* SKOverlayViewController.xib */,
-			);
-			path = SKOverlay;
-			sourceTree = "<group>";
-		};
-		63B659012C2F26E5005FB32B /* SKAppSelectionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				63B658FD2C2F2646005FB32B /* SKAppSelectionViewController.swift */,
-				63B658FE2C2F2646005FB32B /* SKAppSelectionViewController.xib */,
-			);
-			path = SKAppSelectionViewController;
-			sourceTree = "<group>";
-		};
-		63B659022C2F271A005FB32B /* SKAppSelectionCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				63B659032C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift */,
-				63B659042C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib */,
-			);
-			path = SKAppSelectionCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		63B659072C2F37F1005FB32B /* SKAppSelectionController */ = {
-			isa = PBXGroup;
-			children = (
-				63B659022C2F271A005FB32B /* SKAppSelectionCollectionViewCell */,
-				63B659012C2F26E5005FB32B /* SKAppSelectionViewController */,
-				637DD2E62C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift */,
-				637DD2E82C2F3C0900A81F83 /* SKApp.swift */,
-				637DD2EA2C2F3C7800A81F83 /* SKComponent.swift */,
-			);
-			path = SKAppSelectionController;
-			sourceTree = "<group>";
-		};
-		7F3898C82C99E9B900731AD6 /* Device */ = {
-			isa = PBXGroup;
-			children = (
-				7F3947992CCBEFC500B2765F /* Device.swift */,
-				7F3947972CCBEFC500B2765F /* DeviceValidation.swift */,
-				7F3947982CCBEFC500B2765F /* DeviceValidationsDelegate.swift */,
-				7F39479A2CCBEFC600B2765F /* NotificationNameExtension.swift */,
-				7F3947962CCBEFC500B2765F /* UIWindowExtension.swift */,
-			);
-			path = Device;
-			sourceTree = "<group>";
-		};
-		7F4BFFFA2CBD996F00C38C62 /* TestController */ = {
-			isa = PBXGroup;
-			children = (
-				7F4BFFFB2CBD999500C38C62 /* TestViewController.swift */,
-				7F4BFFFC2CBD999500C38C62 /* TestViewController.xib */,
-			);
-			path = TestController;
-			sourceTree = "<group>";
-		};
-		7F5E40E72CB57E730020E0B7 /* UICollectionViewDemo */ = {
-			isa = PBXGroup;
-			children = (
-				7F5E40E82CB57E7E0020E0B7 /* CompositionalLayoutDemo */,
-			);
-			path = UICollectionViewDemo;
-			sourceTree = "<group>";
-		};
-		7F5E40E82CB57E7E0020E0B7 /* CompositionalLayoutDemo */ = {
-			isa = PBXGroup;
-			children = (
-				7F5E40E92CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.swift */,
-				7F5E40EA2CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.xib */,
-			);
-			path = CompositionalLayoutDemo;
-			sourceTree = "<group>";
-		};
-		7F6B066A2C9B1EAE002555B0 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				7F5E40E72CB57E730020E0B7 /* UICollectionViewDemo */,
-				7F6B066B2C9B1EDC002555B0 /* UITableViewDemo */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		7F6B066B2C9B1EDC002555B0 /* UITableViewDemo */ = {
-			isa = PBXGroup;
-			children = (
-				7F6B06702C9B2280002555B0 /* Cell */,
-				7F6B066C2C9B1F11002555B0 /* UITableViewDemoViewController.swift */,
-				7F6B066D2C9B1F11002555B0 /* UITableViewDemoViewController.xib */,
-			);
-			path = UITableViewDemo;
-			sourceTree = "<group>";
-		};
-		7F6B06702C9B2280002555B0 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				7F6B06712C9B229C002555B0 /* UITableViewDemoTableViewCell.swift */,
-				7F6B06722C9B229C002555B0 /* UITableViewDemoTableViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		B297D9C02C2E3A6B00862D0D = {
 			isa = PBXGroup;
 			children = (
-				B297D9CB2C2E3A6B00862D0D /* UIKitDemoApp */,
+				7F5087662DD6AD8A00E2CA4D /* UIKitDemoApp */,
 				B297D9CA2C2E3A6B00862D0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -400,41 +62,6 @@
 				B297D9C92C2E3A6B00862D0D /* UIKitDemoApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B297D9CB2C2E3A6B00862D0D /* UIKitDemoApp */ = {
-			isa = PBXGroup;
-			children = (
-				B297D9DA2C2E3A6D00862D0D /* Info.plist */,
-				B297D9CC2C2E3A6B00862D0D /* AppDelegate.swift */,
-				B297D9CE2C2E3A6B00862D0D /* SceneDelegate.swift */,
-				B297D9D52C2E3A6D00862D0D /* Assets.xcassets */,
-				7F3898C82C99E9B900731AD6 /* Device */,
-				63A248932C2F7A35001E6652 /* EntryPoint */,
-				637DD2EF2C2F3F5500A81F83 /* Extensions */,
-				636383D32C2E527E00668C9E /* Frameworks */,
-				B297D9E02C2E3BB300862D0D /* GenericViews */,
-			);
-			path = UIKitDemoApp;
-			sourceTree = "<group>";
-		};
-		B297D9E02C2E3BB300862D0D /* GenericViews */ = {
-			isa = PBXGroup;
-			children = (
-				B297D9E12C2E3BBE00862D0D /* ListViewController */,
-			);
-			path = GenericViews;
-			sourceTree = "<group>";
-		};
-		B297D9E12C2E3BBE00862D0D /* ListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				637DD2EC2C2F3DA000A81F83 /* ListViewController */,
-				B297D9E62C2E428D00862D0D /* ListElement.swift */,
-				B297D9E82C2E462400862D0D /* List.swift */,
-				637DD2ED2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift */,
-			);
-			path = ListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +78,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7F5087662DD6AD8A00E2CA4D /* UIKitDemoApp */,
 			);
 			name = UIKitDemoApp;
 			productName = UIKitDemoApp;
@@ -473,7 +103,6 @@
 				};
 			};
 			buildConfigurationList = B297D9C42C2E3A6B00862D0D /* Build configuration list for PBXProject "UIKitDemoApp" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -481,6 +110,7 @@
 				Base,
 			);
 			mainGroup = B297D9C02C2E3A6B00862D0D;
+			preferredProjectObjectVersion = 56;
 			productRefGroup = B297D9CA2C2E3A6B00862D0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,22 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				636383D92C2E52C900668C9E /* HitListViewController.xib in Resources */,
-				6365A92C2C35D157005DC110 /* BowTiesListViewController.xib in Resources */,
-				7F5E40EB2CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.xib in Resources */,
-				7F4BFFFE2CBD999500C38C62 /* TestViewController.xib in Resources */,
-				6365A9272C34ECC1005DC110 /* Videos.bundle in Resources */,
-				7F6B066E2C9B1F11002555B0 /* UITableViewDemoViewController.xib in Resources */,
-				B297D9D62C2E3A6D00862D0D /* Assets.xcassets in Resources */,
-				B297D9D92C2E3A6D00862D0D /* Base in Resources */,
-				637DD2F52C2F432500A81F83 /* SKOverlayViewController.xib in Resources */,
-				6365A92F2C35D295005DC110 /* BowTiesSampleData.plist in Resources */,
-				7F6B06732C9B229C002555B0 /* UITableViewDemoTableViewCell.xib in Resources */,
-				63B659002C2F2646005FB32B /* SKAppSelectionViewController.xib in Resources */,
-				6365A9242C34E080005DC110 /* StoreProductViewController.xib in Resources */,
-				63B659062C2F274B005FB32B /* SKAppSelectionCollectionViewCell.xib in Resources */,
-				B297D9E52C2E3BF100862D0D /* ListViewController.xib in Resources */,
-				B297D9D42C2E3A6B00862D0D /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,65 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F39479C2CCBEFC600B2765F /* DeviceValidation.swift in Sources */,
-				B297D9D12C2E3A6B00862D0D /* FrameworksController.swift in Sources */,
-				B297D9CD2C2E3A6B00862D0D /* AppDelegate.swift in Sources */,
-				B297D9E42C2E3BF100862D0D /* ListViewController.swift in Sources */,
-				7F6B066F2C9B1F11002555B0 /* UITableViewDemoViewController.swift in Sources */,
-				B297D9CF2C2E3A6B00862D0D /* SceneDelegate.swift in Sources */,
-				7F39479B2CCBEFC600B2765F /* UIWindowExtension.swift in Sources */,
-				637DD2F12C2F40FE00A81F83 /* UIViewControllerExtension.swift in Sources */,
-				6365A93E2C3608C2005DC110 /* BundleExtension.swift in Sources */,
-				6365A93A2C35DACA005DC110 /* CDBowTies.swift in Sources */,
-				63B659052C2F274B005FB32B /* SKAppSelectionCollectionViewCell.swift in Sources */,
-				6365A92B2C35D157005DC110 /* BowTiesListViewController.swift in Sources */,
-				636383DA2C2E52C900668C9E /* HitListViewController.swift in Sources */,
-				637DD2E72C2F3BCA00A81F83 /* SKOverlayDrawableAppProtocol.swift in Sources */,
-				63B658FF2C2F2646005FB32B /* SKAppSelectionViewController.swift in Sources */,
-				637DD2EE2C2F3DBB00A81F83 /* ContextDataSupportProtocol.swift in Sources */,
-				6365A9232C34E080005DC110 /* StoreProductViewController.swift in Sources */,
-				6365A9362C35D79D005DC110 /* BowTie+CoreDataClass.swift in Sources */,
-				6365A9372C35D79D005DC110 /* BowTie+CoreDataProperties.swift in Sources */,
-				7F39479E2CCBEFC600B2765F /* Device.swift in Sources */,
-				7F6B06742C9B229C002555B0 /* UITableViewDemoTableViewCell.swift in Sources */,
-				636383DF2C2E61B100668C9E /* HitList.xcdatamodeld in Sources */,
-				B297D9E72C2E428D00862D0D /* ListElement.swift in Sources */,
-				6365A9422C360CAD005DC110 /* DictionaryExtension.swift in Sources */,
-				B297D9E92C2E462400862D0D /* List.swift in Sources */,
-				6365A9402C360B64005DC110 /* UIColorExtension.swift in Sources */,
-				637DD2EB2C2F3C7800A81F83 /* SKComponent.swift in Sources */,
-				7F39479F2CCBEFC600B2765F /* NotificationNameExtension.swift in Sources */,
-				6365A93C2C35DE78005DC110 /* CoreDataExamples.swift in Sources */,
-				7F4BFFFD2CBD999500C38C62 /* TestViewController.swift in Sources */,
-				7F5E40EC2CB582F90020E0B7 /* UICollectionViewCompositionalLayoutDemoViewController.swift in Sources */,
-				636383E12C2E623F00668C9E /* CDHitList.swift in Sources */,
-				6365A9322C35D3BB005DC110 /* BowTies.xcdatamodeld in Sources */,
-				637DD2E92C2F3C0900A81F83 /* SKApp.swift in Sources */,
-				637DD2F42C2F432500A81F83 /* SKOverlayViewController.swift in Sources */,
-				7F39479D2CCBEFC600B2765F /* DeviceValidationsDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B297D9D22C2E3A6B00862D0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B297D9D32C2E3A6B00862D0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B297D9D72C2E3A6D00862D0D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B297D9D82C2E3A6D00862D0D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B297D9DB2C2E3A6D00862D0D /* Debug */ = {
@@ -779,29 +338,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		636383DD2C2E61B100668C9E /* HitList.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				636383DE2C2E61B100668C9E /* HitList.xcdatamodel */,
-			);
-			currentVersion = 636383DE2C2E61B100668C9E /* HitList.xcdatamodel */;
-			path = HitList.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		6365A9302C35D3BB005DC110 /* BowTies.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6365A9312C35D3BB005DC110 /* BowTies.xcdatamodel */,
-			);
-			currentVersion = 6365A9312C35D3BB005DC110 /* BowTies.xcdatamodel */;
-			path = BowTies.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B297D9C12C2E3A6B00862D0D /* Project object */;
 }

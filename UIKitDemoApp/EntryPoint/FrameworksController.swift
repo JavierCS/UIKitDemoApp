@@ -47,7 +47,16 @@ class FrameworksController: UIViewController {
                             ]
                         )
                     ),
-                    ListElement(name: "UITableView", controllerToShow: UITableViewDemoViewController.self)
+                    ListElement(
+                        name: "UITableView",
+                        controllerToShow: ListViewController.self,
+                        nextListData: List(
+                            title: "UITableView",
+                            elements: [
+                                ListElement(name: "Diffable Data Source", controllerToShow: DDSTableViewController.self)
+                            ]
+                        )
+                    )
                 ]
             )
         ),
